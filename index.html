@@ -8,7 +8,7 @@
         <script src="https://cdn.tailwindcss.com"></script> 
     <title>Document</title>
 
-	<section>
+	<section class="bg-red-500">
 		<div>
 			<p>Become a Host</p>
 		</div>
@@ -24,8 +24,8 @@
 
 <body class="bg-black h-100% w-auto mb-8">
 
-	<section>
-		<div class="flex grid grid-cols-3 text-align-center text-sm">
+	<section class="flex">
+		<div class="flex-initial h-12 w-32 grid grid-cols-1 text-align-center text-sm min-w-full">
 			<p class="text-white text-left md:text-center">Places to stay</p>
 			<p class="text-white text-left md:text-center">Experiences</p>
 			<p class="text-white text-left md:text-center">Online Experiences</p>
@@ -34,9 +34,9 @@
 	
 	<br><br>
 
-	<div class="flex grid grid-cols-4 bg-white m-auto bg-white h-16 w-1/2 mw-auto rounded-full divide-x">
+	<div class="flex grid grid-cols-5 bg-white m-auto bg-white h-16 w-2/3 mw-auto rounded-full divide-x">
 		<div>
-			<p class="font-bold text-sm text-black pl-4 pt-3">Location</p>
+			<p class="font-bold text-xs text-black pl-4 pt-3">Location</p>
 			<p class="text-xs text-gray pl-4">Where are you going?</p>
 		</div>
 		<div>
@@ -51,10 +51,13 @@
 			<p class="font-bold text-sm text-black pl-4 pt-3">Guest</p>
 			<p class="text-xs text-gray pl-4">Add Guest</p>
 		</div>
+		<div class="flex flow-row-reverse">
+			<button class="btn btn-round flex flex-row">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+			</button>
+		</div>
 	</div>
-
 	<br><br>
-
 	<main class="bg-red-500 rounded-lg mb-10 h-96 w-10/12 mx-auto text-5xl font-bold text-gray-300 md:text-center">
 		<br><br><br><br>Help house 100,000 refugees fleeing Ukraine<br>
 		<button class="place-items-center border border-gray-300 text-xs p-2 mt-6 rounded-lg">Learn more</button>
